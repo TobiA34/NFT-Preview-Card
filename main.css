@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "SF Pro Rounded Regular";
+    src: url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot");
+    src: url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.svg#SF Pro Rounded Regular")format("svg");
+}
+
+:root {
+  --Cyan: hsl(178, 100%, 50%);
+  --SoftBlue: hsl(215, 51%, 70%);
+}
+
+/* Ultities  */
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Pro Rounded Regular";
+}
+
+.wrapper {
+    background: #0D192C;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 596px;
+    background: #15263F;
+    border-radius: 15px;
+}
+
+.container-1 {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+
+}
+
+.img-container {
+ border-radius: 8px;
+}
+
+#image {
+  width: 100%;
+ }
+
+.overlay {
+  position: absolute;
+  top: 2;
+  bottom: 0;
+  left: 1;
+  right: 1;
+  height: 94%;
+  width: 90%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--Cyan);
+}
+
+.img-container:hover .overlay {
+  opacity: .5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container-2 {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    color:#8BACD9 ;
+}
+
+#equilibrium-title {
+    font-size: 22px;
+    color: #FFFFFF;
+ }
+
+ #equilibrium-title:hover {
+     color: var(--Cyan);
+ }
+
+
+ #equilibrium-p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    margin-right: 38px;
+    color: #8BACD9;
+ }
+
+ .line {
+    height: 1px;
+    width: 302px;
+    background: #2E405A;
+ }
+
+ .section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ .section-2-container{
+    display: flex;
+    gap: 6.48px;
+ }
+
+ .avatar-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 16px;
+    gap: 16px;
+ }
+
+  .avatar-container p{
+   margin-top: 8px;
+   font-size: 16px;
+ }
+
+   .avatar-container img{
+     border: 1px solid white;
+     border-radius: 50%;
+     width: 100%;
+     height: 100%;
+ }
+
+
+   .avatar-container img:hover{
+       opacity: 0.3;
+  }
+ 
+
+ #logo {
+    width: 33px;
+    height: 33px;
+ }
+
+ span {
+    color: white;
+ }
+
+ span:hover{
+    color: var(--Cyan);
+    transition: 2s;
+ }
